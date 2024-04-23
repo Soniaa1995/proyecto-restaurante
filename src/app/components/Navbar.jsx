@@ -38,10 +38,10 @@ export default function Navbar() {
         <nav className={`sm:block sm:my-auto mt-3 ${open == false ? "hidden" : "block"}`}>
           <ul className="flex flex-col gap-4 sm:flex-row">
             <li>
-              <Link href="#">Inicio</Link>
+              <Link href="/">Inicio</Link>
             </li>
             <li>
-              <Link href="#">Carta</Link>
+              <Link href="/menu">Carta</Link>
             </li>
             <li>
               <Link href="#">Promociones</Link>

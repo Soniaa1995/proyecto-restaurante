@@ -44,7 +44,7 @@ export default function Navbar() {
               <Link href="/menu">Carta</Link>
             </li>
             <li>
-              <Link href="promociones">Promociones</Link>
+              <Link href="/promociones">Promociones</Link>
             </li>
             <li>
               <Link href="/reserva">Reserva</Link>

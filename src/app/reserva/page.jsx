@@ -30,7 +30,13 @@ export default function reservaPage() {
         text: "El campo teléfono es obligatorio!",
         icon: "error",
       });
-    } else if (!data.date) {
+    } else if (!data.people) {
+      Swal.fire({
+        title: "Error!",
+        text: "Debe seleccionar el número de personas que asistirán al restaurante!",
+        icon: "error",
+      });
+    }else if (!data.date) {
       Swal.fire({
         title: "Error!",
         text: "El campo date es obligatorio!",
@@ -57,21 +63,27 @@ export default function reservaPage() {
     lastName: "",
     email: "",
     phone: "",
+    people: "",
     date: "",
     message: "",
   });
 
   return (
     <form className="flex justify-center sm:flex sm:justify-center sm:m-0">
-      <div className="bg-gray-300 w-[60%] p-7 my-9">
-        <h1 className="text-2xl mb-5 text-center">RESERVA ONLINE</h1>
-        <div className="mb-5">
-          <label htmlFor="name" className="block mb-2 text-sm">
+      <div className="bg-gradient-to-r from-lime-200 to-yellow-200 w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] p-7 my-9">
+        <h1 className="text-3xl mb-5 text-center text-black font-semibold font-poetsenOne">
+          RESERVA ONLINE
+        </h1>
+        <div className="mb-5 ">
+          <label
+            htmlFor="name"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
             Nombre*
           </label>
           <input
             type="text"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="Nombre"
             name="firstName"
             value={data.firstName}
@@ -80,7 +92,10 @@ export default function reservaPage() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="apellidos" className="block mb-2 text-sm">
+          <label
+            htmlFor="apellidos"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
             Apellidos*
           </label>
           <input
@@ -94,7 +109,10 @@ export default function reservaPage() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="email" className="block mb-2 text-sm">
+          <label
+            htmlFor="email"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
             Email*
           </label>
           <input
@@ -108,7 +126,10 @@ export default function reservaPage() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="name" className="block mb-2 text-sm">
+          <label
+            htmlFor="name"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
             Teléfono*
           </label>
           <input
@@ -122,7 +143,32 @@ export default function reservaPage() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="llegada" className="block mb-2 text-sm">
+        <label
+            htmlFor="name"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
+            Número de personas*
+          </label>
+          <select
+            name="people"
+            id="people"
+            value={data.people}
+            onChange={handleChangeInput}
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+          >
+            <option value="comensales">Personas</option>
+            <option value="person">1 Persona</option>
+            <option value="people">2 personas</option>
+            <option value="people">3 personas</option>
+            <option value="people">4 personas</option>
+            <option value="people">Más de 5 personas</option>
+          </select>
+        </div>
+        <div className="mb-5">
+          <label
+            htmlFor="llegada"
+            className="block mb-2 text-sm text-black font-semibold"
+          >
             Fecha y hora de la reserva*
           </label>
           <input
@@ -135,27 +181,27 @@ export default function reservaPage() {
           />
         </div>
         <div className="mb-5">
-          <label htmlFor="message" className="block mb-2 text-sm">
+          <label htmlFor="message" className="block mb-2 text-sm text-black font-semibold">
             Información adicional
           </label>
           <textarea
             id="message"
             rows="4"
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-            placeholder="Posibles alergias"
+            placeholder="Posibles alergias, intolerancias, celiacos, etc.."
             name="message"
             value={data.message}
             onChange={handleChangeInput}
           ></textarea>
         </div>
         <div className="text-center">
-        <button
-          onClick={alertButton}
-          type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-sm w-full sm:w-[60%] px-5 py-2.5"
-        >
-          Enviar
-        </button>
+          <button
+            onClick={alertButton}
+            type="submit"
+            className="text-white bg-blue-700 hover:bg-blue-800 rounded-lg text-sm w-full sm:w-[60%] px-5 py-2.5"
+          >
+            Enviar
+          </button>
         </div>
       </div>
     </form>

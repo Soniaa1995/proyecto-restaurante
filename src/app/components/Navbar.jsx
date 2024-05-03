@@ -11,9 +11,9 @@ export default function Navbar() {
     
   return (
     <>
-        <header className="sm:flex sm:justify-between bg-black p-4">
-        <section className="flex justify-between">
-          <h1 className="text-2xl font-semibold">La vaca dice Muu</h1>
+        <header className="sm:flex sm:justify-between text-black bg-gradient-to-r from-amber-500 to-yellow-300 p-4">
+        <section className="flex justify-between mb-5">
+          <h1 className="text-xl font-semibold md:text-4xl font-poetsenOne">La vaca dice Muu</h1>
 
           <section className="sm:hidden">
             <button
@@ -36,7 +36,7 @@ export default function Navbar() {
         </section>
 
         <nav className={`sm:block sm:my-auto mt-3 ${open == false ? "hidden" : "block"}`}>
-          <ul className="flex flex-col gap-4 sm:flex-row">
+          <ul className="flex flex-col gap-4 text-sm  sm:flex-row md:text-md lg:text-2xl font-poetsenOne">
             <li>
               <Link href="/">Inicio</Link>
             </li>

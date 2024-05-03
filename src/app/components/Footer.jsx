@@ -7,10 +7,10 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-slate-800 p-5">
+      <footer className="bg-gradient-to-r from-amber-500 to-yellow-300 p-3 text-black font-poetsenOne">
         <div className="flex flex-col items-center sm:flex sm:flex-row sm:justify-around ">
           <div className="">
-            <p className="">La vaca dice Mu &copy;Copiright2024</p>
+            <p className=" sm:text-lg md:text-xl lg:text-3xl" >La vaca dice Muu&copy;Copiright2024</p>
           </div>
           <div className="sm:flex sm:flex: row items-center">
             <p className="flex justify-center m-2">Síguenos</p>

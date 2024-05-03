@@ -14,7 +14,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily:{
-        poetsenOne:["Poetsen One", "sans-serif"]
+        poetsenOne:["Poetsen One", "sans-serif"],
+        ubuntoSans: ["Ubuntu Sans", "sans-serif"],
+        marker: ["Permanent Marker", "cursive"]
       }
     },
     screens: {

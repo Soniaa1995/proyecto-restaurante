@@ -110,7 +110,7 @@ export default function contactoPage() {
 
   return (
     <div className="flex flex-col justify-center items-center p-10 sm:grid sm:grid-cols-2 sm:justify-evenly sm:items-center sm:grow">
-      <h1 className="text-lg sm:text-3xl text-center p-3">
+      <h1 className="text-xl sm:text-3xl font-poetsenOne text-black text-center p-3 mb-4">
         ¿QUIERES TRABAJAR CON NOSOTROS?
       </h1>
       <div className="w-full mb-10">
@@ -118,7 +118,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="text"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="NOMBRE Y APELLIDOS"
               name="firstName"
               required
@@ -129,7 +129,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="email"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="CORREO ELECTRONICO"
               name="email"
               required
@@ -140,7 +140,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="phone"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="TELEFONO"
               name="phone"
               required
@@ -151,7 +151,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <textarea
               type="message"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="CUENTANOS ALGO MAS SOBRE TI.."
               name="message"
               required
@@ -161,7 +161,7 @@ export default function contactoPage() {
           </div>
           <div className="mb-5">
             <input
-              className="block w-full text-sm p-2.5 text-slate-400 rounded-lg cursor-pointer bg-white"
+              className="block w-full font-ubuntoSans font-semibold text-sm p-2.5 text-slate-400 rounded-lg cursor-pointer bg-white"
               name="file"
               type="file"
               value={dataWork.file}
@@ -172,14 +172,14 @@ export default function contactoPage() {
             <button
             onClick={alertButtonWork}
               type="submit"
-              className="bg-amber-500 rounded-lg text-black w-full px-5 py-2.5"
+              className="bg-orange-600 hover:bg-orange-400 rounded-lg text-black w-full px-5 py-2.5 font-ubuntoSans font-semibold"
             >
               Enviar
             </button>
           </div>
         </form>
       </div>
-      <h1 className="text-lg sm:text-3xl text-center p-3">
+      <h1 className="text-xl sm:text-3xl font-poetsenOne text-black text-center p-3 mb-4">
         ¿IDEAS, SUGERENCIAS, PROPUESTAS? TE ESCUCHAMOS
       </h1>
       <div className="w-full">
@@ -187,7 +187,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="text"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="NOMBRE Y APELLIDOS"
               name="firstName"
               required
@@ -198,7 +198,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="email"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="CORREO ELECTRONICO"
               name="email"
               required
@@ -209,7 +209,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <input
               type="phone"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="TELEFONO"
               name="phone"
               required
@@ -220,7 +220,7 @@ export default function contactoPage() {
           <div className="mb-5">
             <textarea
               type="message"
-              className="text-gray-900 rounded-lg block w-full p-2.5"
+              className="text-gray-900 font-ubuntoSans font-semibold rounded-lg block w-full p-2.5"
               placeholder="MENSAJE"
               name="message"
               required
@@ -232,7 +232,7 @@ export default function contactoPage() {
             <button
               onClick={alertButtonSuggest}
               type="submit"
-              className="bg-amber-500 rounded-lg text-black w-full px-5 py-2.5"
+              className="bg-orange-600 hover:bg-orange-400 rounded-lg text-black w-full px-5 py-2.5 font-ubuntoSans font-semibold"
             >
               Enviar
             </button>

@@ -12,13 +12,13 @@ export default function MenuPage() {
               alt="burguer"
             />
             <div className="p-5 text-center">
-              <h5 className="mb-2 text-xl font-bold tracking-tight text-black">
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-black font-marker">
                 {burguer.title}
               </h5>
-              <p className="mb-3 text-black">
+              <p className="mb-3 text-black font-ubuntoSans font-semibold">
                 {burguer.description}
               </p>
-              <p className="text-black font-semibold">Precio: {burguer.price}€</p>
+              <p className="text-black font-poetsenOne">Precio: {burguer.price}€</p>
             </div>
           </div>
       ))}

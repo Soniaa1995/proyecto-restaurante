@@ -3,7 +3,7 @@
 import Swal from "sweetalert2";
 import { useState } from "react";
 
-export default function contactoPage() {
+export default function ContactoPage() {
 
   //PARA EL FORMULARIO DE SUGERENCIAS
   const alertButtonSuggest = (e) => {

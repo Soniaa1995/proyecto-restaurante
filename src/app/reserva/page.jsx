@@ -3,7 +3,7 @@
 import Swal from "sweetalert2";
 import { useState } from "react";
 
-export default function reservaPage() {
+export default function ReservaPage() {
   const alertButton = (e) => {
     e.preventDefault();
     if (!data.firstName) {

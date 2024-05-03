@@ -2,7 +2,7 @@ import Image from "next/image";
 import promo1 from "@/public/img-promo1.jpg";
 import promo2 from "@/public/img-promo2.jpg";
 
-export default function promoPage() {
+export default function PromoPage() {
   return (
     <div className="p-5">
       <h1 className="text-center mt-5 mb-6 text-xl xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-poetsenOne text-black font-semibold">

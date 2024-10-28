@@ -6,7 +6,7 @@ import twins from "@/public/img-section-dos.jpg";
 
 export default function Page() {
   return (
-    <main className="grow space-y-8">
+    <main className="grow space-y-8 lg:flex lg:flex-col lg:justify-center">
       <section className="relative inline-block">
         <Image
           src={burguers}

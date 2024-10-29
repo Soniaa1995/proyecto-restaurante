@@ -11,9 +11,9 @@ export default function Navbar() {
     
   return (
     <>
-        <header className="sm:flex sm:justify-between text-black bg-gradient-to-r from-amber-500 to-yellow-300 p-4">
+        <header className="sm:flex sm:justify-between text-black bg-gradient-to-r from-amber-500 to-yellow-300 p-4 ">
         <section className="flex justify-between mb-5">
-          <h1 className="text-xl font-semibold md:text-2xl lg:text-5xl font-poetsenOne sm:mt-4 md:mt-3 lg:mt-1">La vaca dice Muu</h1>
+          <h1 className="text-xl font-semibold md:text-2xl lg:text-4xl font-poetsenOne sm:mt-4 md:mt-3 lg:mt-1">La vaca dice Muu</h1>
           <section className="sm:hidden">
             <button
               className={`${open == false ? "hidden" : ""}`}
